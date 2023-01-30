@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <main></main>
+  <div class="row pt-2 header navbar">
+    <div class="col"> 
+      <button type="button" id="menu-logo">
+        <img src="images/menu-bar.svg" alt="Menu">
+    </button>
+    <a class="navbar-brand" href="#">
+      <img src="images/header-logo.svg" alt="Company">
+  </a>
+    </div>
+
+    <div class="col sbar">
+      <div class="input-group  mb-3">
+        <img id="basic-addon1" src="./images/search-icon.svg">
+        <input type="search" class="form-control search-input" placeholder="Search" aria-describedby="basic-addon1">
+      </div>
+    </div>
+
+    
+
+    <div class="dropdown col"> 
+        <img class="notification-icon" src="./images/notification-icon.svg"> 
+        <div class="profile">
+          <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./images/profile.png" width="40" height="40" class="rounded-circle me-2">
+            <strong>Jhon Doe</strong>
+          </a>
+          <ul class="dropdown-menu text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-shrink-0 p-3 bg-light sidebar">
+    <div class="side-search-container d-none mb-4">
+        <input type="search" class="form-control side-search" placeholder="Search">
+    </div>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link dash-items dash-active" aria-current="page">
+          <img class="dash-img" src="./images/dashboard-active.svg">
+          <span class="content-title">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="innerpge.html" class="nav-link dash-items  link-dark">
+          <img class="dash-img" src="./images/graph-default.svg">
+          <span class="content-title">Analysis</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link dash-items  link-dark">
+          <img class="dash-img" src="./images/inbox-default.svg">
+          <span class="content-title">Inbox</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link dash-items  link-dark">
+          <img class="dash-img" src="./images/clock-default.svg">
+          <span class="content-title">History</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link dash-items  link-dark">
+          <img class="dash-img" src="./images/user-default.svg">
+          <span class="content-title">Users</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link dash-items  link-dark">
+          <img class="dash-img" src="./images/maintenance-default.svg">
+          <span class="content-title">Maintenence
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link dash-items  link-dark">
+          <img class="dash-img" src="./images/setting-default.svg">
+          <span class="content-title">Settings
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h3><strong>Dashboard</strong></h3>
+
+    <div class="div1">
+      <div class="div11 text-center">
+        <img src="./images/star.svg" class="f-img">
+        <div>
+          <h4><b>23,456</b></h4>
+          <p>New Products</p>
+        </div>
+      </div>
+      <div class="div11 text-center">
+        <img src="./images/new-product.svg" class="f-img">
+        <div>
+          <h4><b>2345</b></h4>
+          <p>Added Products</p>
+        </div>
+      </div>
+      <div class="div11 text-center">
+        <img src="./images/total-product.svg" class="f-img" >
+        <div>
+          <h4><b>32,456</b></h4>
+          <p>Total Products</p>
+        </div>
+      </div>
+      <div class="div11 text-center">
+        <img src="./images/dollar-filled.svg" class="f-img">
+        <div>
+          <h4><b>5678</b></h4>
+          <p>Today's Sale</p>
+        </div>
+      </div>
+      <div class="div11 text-center">
+        <img src="./images/money-bag.svg" class="f-img">
+        <div>
+          <h4><b>33,456</b></h4>
+          <p>Total Sale</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row sales mt-5 mb-5">
+      <div class="container data-graph p-5 bg-light col-lg-8 col-sm-12">
+        <h4><b>Sale</b></h4>
+        <div class="graph-selector" style="margin-left:500px; margin-bottom: 20px; margin-top: -40px;">
+          <a style="color: #ADADAD; margin-right: 10px;">Weekly</a>
+          <a style="color: #ADADAD; margin-right: 10px;">Monthly</a>
+          <a style="color: #C8242F; margin-right: 10px;">Yearly</a>
+        </div>
+        <img src="./images/data-graph.png">
+      </div>
+      <div class="container-fluid pie-chart p-5 bg-light col-lg-4 col-sm-12">
+        <h4><b>Sale by country</b></h4>
+        <img src="./images/pie-chart.svg">
+        <div class="row">
+          <div class="circle col-lg-2" style="background-color: #C8242F;"></div>
+          <div class="col"><b>United States of America</b></div>
+          <div class="circle col-lg-2" style="background-color: #A2B86C;"></div>
+          <div class="col"><b>Canada</b></div>
+        </div>
+        <div class="row mt-2">
+          <div class="circle col-lg-2" style="background-color: #F16C20;"></div>
+          <div class="col"><b>Russia</b></div>
+          <div class="circle col-lg-2" style="background-color: #EBC844;"></div>
+          <div class="col"><b>India</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container invoice-table p-5 bg-light">
+      <h4><b>Invoices</b></h4>
+      <br>
+      <br>
+      <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="color: #ADADAD;">Invoice</th>
+            <th scope="col" style="color: #ADADAD;">Company Name</th>
+            <th scope="col" style="color: #ADADAD;">Email</th>
+            <th scope="col" style="color: #ADADAD;">Due Date</th>
+            <th scope="col" style="color: #ADADAD;">Status</th>
+            <th scope="col" style="color: #ADADAD;">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>65231</td>
+            <td>Public Adujusting Firm</td>
+            <td>abcd@gmail.com</td>
+            <td>24 May, 2020</td>
+            <td><p class="text-center" style="color:#FF4545; background-color:#FFF5F5; width:60px; height:20px;">Failed</p></td>
+            <td>$170</td>
+          </tr>
+          <tr>
+            <td>89361</td>
+            <td>Other</td>
+            <td>abcd@gmail.com</td>
+            <td>24 May, 2020</td>
+            <td><p class="text-center" style="color:#FF4545; background-color:#FFF5F5; width:60px; height:20px;">Failed</p></td>
+            <td>$170</td>
+          </tr>
+          <tr>
+            <td>5166</td>
+            <td>Vendor</td>
+            <td>abcd@gmail.com</td>
+            <td>24 May, 2020</td>
+            <td><p class="text-center" style="color:#3CDD5F; background-color:#EBFFEF; width:60px; height:20px;">Paid</p></td>
+            <td>$300</td>
+          </tr>
+          <tr>
+            <td>71946</td>
+            <td>TPA</td>
+            <td>abcd@gmail.com</td>
+            <td>24 May, 2020</td>
+            <td><p class="text-center" style="color:#BABABA; background-color:#F8F8F8; width:60px; height:20px;">Pending</p></td>
+            <td>$2000</td>
+          </tr>
+          <tr>
+            <td>15528</td>
+            <td>Insurance Carrier</td>
+            <td>abcd@gmail.com</td>
+            <td>24 May, 2020</td>
+            <td><p class="text-center" style="color:#3CDD5F; background-color:#EBFFEF; width:60px; height:20px;">Paid</p></td>
+            <td>$590</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+</div>
+</div>
+  </div>
+
+</body>
+<script src="./js/custom.js"></script>
+</html>
