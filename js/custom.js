@@ -36,7 +36,7 @@ if (screen.width < 768) {
         if (!sidebar.classList.contains('sidebar-hide')) {
             sideSearch.focus();
         } else {
-            menu.click();
+            menuLogo.click();
             sideSearch.focus();
         }
     })
